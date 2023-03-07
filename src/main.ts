@@ -20,12 +20,18 @@ import '@ionic/vue/css/text-transformation.css';
 import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
+import dayjs from 'dayjs';
+
 /* Theme variables */
 import './theme/variables.css';
+
+import './../public/assets/fonts/SecularOne-Regular.ttf';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+
+app.config.globalProperties.$dayjs = dayjs;
   
 router.isReady().then(() => {
   app.mount('#app');

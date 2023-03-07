@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'agenda-app',
+  appId: 'com.bppkad.agenda',
+  appName: 'Agenda App',
   webDir: 'dist',
   bundledWebRuntime: false
 };
